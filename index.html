@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <style>
+            div {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin: 2px;
+            float : left;
+        }
+        </style>
+        <h1>박스를 클릭하세요</h1>
+        <div id="container"></div>
+        <script type="text/javascript">
+            var div, container = document.getElementById('container')
+                for(let i=0;i<5;i++){
+                    div = document.createElement('div')
+                    div.onclick = function(){
+                        alert('이것은 박스 #' + i + '입니다.')
+                    }
+                    container.appendChild(div)
+                }
+        </script>   
+    </body>
+</html>
